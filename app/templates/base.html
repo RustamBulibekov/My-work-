@@ -1,0 +1,22 @@
+<html>
+<head>
+    {% if title %}
+    <title>{{ title }} - Microblog</title>
+    {% else %}
+    <title>Welcome to Microblog</title>
+    {% endif %}
+</head>
+<body>
+<div>
+    Microblog:
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('login') }}">Login</a>
+</div>
+<hr>
+{% block content %}{% endblock %}
+</body>
+</html>
+
+<!--В этом шаблоне я использовал оператор управления блоком, чтобы определить место, где производные шаблоны
+могут вставляться. Блокам присваивается уникальное имя, которое производные шаблоны могут ссылаться,
+когда они предоставляют свой контент.>
