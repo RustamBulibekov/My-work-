@@ -1,4 +1,4 @@
-#!/Users/satibulibekova/pythonProjects/Flask_project_Migel/venv/bin/python
+#!/home/user/PycharmProjects/My-work-/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
